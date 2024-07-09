@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/menu_Dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/round_bar_chart_24"/>
+
+    <item android:id="@+id/menu_Maintenance"
+        android:title="Maintenance"
+        android:icon="@drawable/round_widgets_24"/>
+
+
+
+</menu>

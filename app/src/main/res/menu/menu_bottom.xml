@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id="@+id/menu_workout"
+        android:title="Workouts"
+        android:icon="@drawable/round_fitness_center_24" />
+
+<!--    <item android:id="@+id/menu_custom"-->
+<!--        android:title="Custom"-->
+<!--        android:icon="@drawable/round_edit_24"/>-->
+
+    <item android:id="@+id/menu_exercises"
+        android:title="Exercises"
+        android:icon="@drawable/round_widgets_24"/>
+
+    <item android:id="@+id/menu_report"
+        android:title="Report"
+        android:icon="@drawable/round_bar_chart_24"/>
+
+
+
+    <item android:id="@+id/menu_account"
+        android:title="Account"
+        android:icon="@drawable/round_person_24"/>
+
+</menu>

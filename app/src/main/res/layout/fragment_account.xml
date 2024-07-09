@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".AccountFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileTv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerCrop"
+            android:src="@drawable/round_person_24"
+            app:shapeAppearanceOverlay="@style/ImageStyle_circle"
+            />
+
+        <TextView
+            android:id="@+id/nameLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_below="@id/profileTv"
+            android:text="Name"/>
+
+
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_below="@id/profileTv"
+            android:text="Full Name"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/emailLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_below="@id/nameLabelTv"
+            android:text="Email"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_below="@id/nameLabelTv"
+            android:text="omap@chicken.com"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/phoneLabelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_below="@id/emailLabelTv"
+            android:text="Phone"
+            />
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_below="@id/emailLabelTv"
+            android:text="09*********"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/phoneLabelTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Preferences"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/editCv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+                app:cardCornerRadius="10dp"
+                app:contentPadding="10dp"
+                android:backgroundTint="@color/gray"
+                >
+                <TextView
+                    android:id="@+id/editBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="me"
+                    android:drawableStart="@drawable/round_favorite_24"
+                    android:drawableEnd="@drawable/round_navigate_next_24"
+                    android:drawablePadding="10dp"
+
+                    />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/logoutCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            app:contentPadding="10dp"
+            android:backgroundTint="@color/gray"
+            >
+            <TextView
+                android:id="@+id/logoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="logout"
+                android:drawableStart="@drawable/round_logout_24"
+                android:drawableEnd="@drawable/round_navigate_next_24"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>
